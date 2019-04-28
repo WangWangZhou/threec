@@ -1,0 +1,21 @@
+{
+  "name": "csdn blog点击器",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "自动点击blog.csdn.net网站上阅读更多的按钮,合适chrome浏览器",
+  "page_action": {
+    "default_icon": "monkey.png",
+    "default_title": "monkey",
+    "default_popup": "popup.html"	
+  },
+  "background": {
+	"scripts": ["background.js"] 
+  },
+  "permissions": ["tabs"],  
+  "content_scripts": [
+    {
+      "matches": ["https://blog.csdn.net/*/article/details/*","http://*.51cto.com/*","http://localhost:9001/*,"http://localhost:9393/*","http://localhost:9797/*"],
+      "js": ["jquery-2.1.1.min.js","script.js"]
+    }
+  ]
+}
