@@ -1,6 +1,9 @@
 setTimeout(
-document.getElementById('btn-readmore')!=null ? document.getElementById('btn-readmore').click():''
-,1000);
+	document.getElementsByClassName('btn-readmore')!=null ? document.getElementsByClassName('btn-readmore')[0].click():''
+	,1000);
+setTimeout(
+	document.getElementById('asideFooter')!=null ? document.getElementById('asideFooter').style.display='none':''
+	,1000);	
 setTimeout(function(){
 	$('.footer_mask').slideDown('slow',function(){
 		$('.footer_mask').remove();

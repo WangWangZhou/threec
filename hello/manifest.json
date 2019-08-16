@@ -9,13 +9,15 @@
     "default_popup": "popup.html"	
   },
   "background": {
-	"scripts": ["background.js"] 
-  },
-  "permissions": ["tabs"],  
-  "content_scripts": [
-    {
-      "matches": ["https://blog.csdn.net/*/article/details/*","http://*.51cto.com/*","http://localhost:9001/*,"http://localhost:9393/*","http://localhost:9797/*"],
-      "js": ["jquery-2.1.1.min.js","script.js"]
-    }
-  ]
+   "scripts": ["background.js"] 
+ },
+ "permissions": ["tabs"],  
+ "content_scripts": [
+  {
+    "matches": [
+      "https://blog.csdn.net/*/article/details/*",
+      "http://*.51cto.com/*"],
+    "js": ["jquery-2.1.1.min.js","script.js"]
+  }
+]
 }

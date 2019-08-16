@@ -1,6 +1,4 @@
-$('#btnCopy').click(function(){
-	console.info('btnCopy')
-})
-$('#btnPaste').click(function(){
-	console.info('btnPaste')
-})
+var dbkey = 'op';
+
+
+// 调用后台JS
